@@ -2,7 +2,7 @@
 
 Segédlet a JAVA nyelv alapjainak elsajátításához, magyarázattal együtt.
 
-Szükséges Java verzió: 8 vagy annál magasabb
+Szükséges Java verzió: 8 vagy annál magasabb.
 
 ## Tartalom
 
