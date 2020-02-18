@@ -15,7 +15,9 @@ public class TestRunner
             System.out.println(failure.toString());
         }
 
-        System.out.println("Elbukott tesztesetek száma: " + result.getFailureCount());
+        System.out.println("Sikeres tesztesetek száma: " + (result.getRunCount() - result.getFailureCount()));
+
+        System.out.println("Sikertelen tesztesetek száma: " + result.getFailureCount());
 
         System.out.println("Ignorált tesztesetek száma: " + result.getIgnoreCount());
 
