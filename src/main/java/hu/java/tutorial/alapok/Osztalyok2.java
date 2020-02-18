@@ -38,7 +38,7 @@ public class Osztalyok2
         //2. lépsben a new kulcsszóval hozzuk létre az új objectumot
         //3. lépésben pedig a new kulcsszót az osztály kostruktora követi -> ez fogja inicializálni az új objectumot
         //ebben az esetben a konstruktor be fogja állítani a "nev" változó értékét a paraméterként megkapott értékre
-        Osztalyok2 osztalyok = new Osztalyok2("első osztályom");
+        Osztalyok2 osztalyok = new Osztalyok2("ez legyen a név értéke");
 
         //A példány változóinak és metódusainak elérése
         //megváltoztatom az osztályok példányom "nev" változójának értékét "új név"-re a setNev(String nev) metódus meghívásával

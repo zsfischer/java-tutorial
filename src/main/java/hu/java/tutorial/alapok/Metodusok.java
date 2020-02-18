@@ -8,7 +8,7 @@ public class Metodusok
     //public static - változtatók (láthatóság, osztály szintű stb.)
     //int - visszatérési érték típusa (ha nem akarunk semmivel sem visszatérni, akkor void kulcsszót használjuk)
     //metódusNév - a metódus neve
-    //intaa, String b - paraméterek, amit a metódus megkap, amikor meghívjuk
+    //int a, String b - paraméterek, amit a metódus megkap, amikor meghívjuk
     //metódusTörzs - a metódus törzse, ami leírja, hogy mit is csinál ez a metódus
 
     //Példa metódusok
@@ -17,9 +17,10 @@ public class Metodusok
         System.out.println("hello");
     }
 
-    private int osszeg(int a, int b)
+    private int osszeg(int a, int masodikSzam)
     {
-        return a + b;
+        int osszeg = a + masodikSzam;
+        return osszeg;
     }
 
     public String[] tombos(String[] stringTomb)

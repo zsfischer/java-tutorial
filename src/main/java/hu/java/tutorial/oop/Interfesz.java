@@ -1,16 +1,15 @@
 package hu.java.tutorial.oop;
 
-//interfész az egy referencia típus
 //hasonló az osztályokhoz, viszont ez absztrakt metódusok gyűjteménye (általában)
 //szóval amikor egy osztály implementál egy interfészt, akkor az összes metódust implementálnia kell, ami az interfészben van (kivéve ha az osztály abstract, mivel az interfész metódusai absztaktak)
-//interfész az absztrakt metódusokon kívül tartalmazhat konstansokat, default metódusokat, static metódusokat
+//interfész az absztrakt metódusokon kívül tartalmazhat konstansokat, default metódusokat (Java 8-tól), static metódusokat
 //metódus-törzzsel csak a default és static metódusok rendelkezhetnek
 //interface kulcsszóval írjuk le az interfészt
 //az osztállyal ellentétben itt csak annak az osztálynak a viselkedését írjuk le, ami majd implementálja az interfészt
 //Amiben hasonlít az osztályokhoz:
 //akárhány metódust írhatunk bele
 //.java kiterjesztésű
-//az interfész neve meg kell egyeznie a file nevével
+//az interfész neve meg kell egyezzen a file nevével
 //Amiben eltér az osztályoktól:
 //nem példányosítható
 //nem tartalmaz konstruktort

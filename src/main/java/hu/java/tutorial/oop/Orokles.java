@@ -75,7 +75,7 @@ public class Orokles
 //        osztaly.szamol();
 
         GyerekOsztaly osztaly2 = new GyerekOsztaly(a, b, c, d);
-        //mostmár van szamol metódus, mert a statikus típus GyerekOsztaly
+        //mostmár van szamol() metódus, mert a statikus típus GyerekOsztaly
         osztaly2.szamol();
 
         //instanceof vs getClass

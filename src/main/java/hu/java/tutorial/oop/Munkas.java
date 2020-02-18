@@ -10,7 +10,7 @@ public class Munkas extends Absztrakcio
         this.fizetes = fizetes;
     }
 
-    //implementálnunk kell az ősoztályban található abstract metódusokat (vagy abstract lesz ez az osztály is)
+    //implementálnunk kell az ősoztályban található abstract metódusokat (vagy abstract-tá tesszük ezt az osztályt is)
     @Override
     public void abstractMetodus(String szoveg)
     {

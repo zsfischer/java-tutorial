@@ -1,6 +1,6 @@
 package hu.java.tutorial.alapok;
 
-//Láthatósági típusok alatt azt értjük, hogy az adott elem miylen range-ben érhető el, kik láthatják
+//Láthatósági típusok alatt azt értjük, hogy az adott elem milyen range-ben érhető el, kik láthatják
 //4 fajtája van: public, protected, package-private, private
 public class Lathatosag
 {
@@ -19,7 +19,7 @@ public class Lathatosag
 
     //Egyéb módosítók
     //static - osztályszintű változók és metódusok definiálására
-    //final - konstans változók definiálására (az értéke későnn nem változtatható meg)
+    //final - konstans változók definiálására (az értéke később nem változtatható meg)
     //abstract - abstract osztályok/metódusok létrehozására
     //synchronized/volatile - szálkezelésnél számít
 }
