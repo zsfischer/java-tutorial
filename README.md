@@ -1,6 +1,6 @@
 # Java Tutorial
 
-Segédlet a JAVA nyelv alapjainak elsajátításához, magyarázattal együtt.
+Segédlet a Java nyelv alapjainak elsajátításához, magyarázattal együtt.
 
 Használt Java verzió: 8
 
