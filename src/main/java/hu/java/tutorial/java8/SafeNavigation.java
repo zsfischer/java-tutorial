@@ -2,6 +2,7 @@ package hu.java.tutorial.java8;
 
 import java.util.Optional;
 
+//Más nyelvekben Elvis Operátorként ismert (?)
 public class SafeNavigation
 {
 

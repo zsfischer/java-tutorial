@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 //I/O (Input/Output) műveletek végrehajtása Java-ban
-public class Fileok
+public class IO
 {
     public static void main(String[] args) throws IOException
     {
