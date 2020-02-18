@@ -4,6 +4,8 @@ Segédlet a JAVA nyelv alapjainak elsajátításához, magyarázattal együtt.
 
 Használt Java verzió: 8
 
+Teszteléshez szükséges JAR file letöltése: https://github.com/downloads/junit-team/junit/junit-4.10.jar
+
 ## Tartalom
 
 * Alapok
@@ -38,5 +40,7 @@ Használt Java verzió: 8
   * LocalDate/LocalTime/LocalDateTime
   * Files API
   * Safe navigation
+  
+* JUnit tesztek
 
 #### Készítette: Fischer Zsolt
