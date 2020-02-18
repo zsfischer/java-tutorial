@@ -2,9 +2,9 @@
 
 Segédlet a JAVA nyelv alapjainak elsajátításához, magyarázattal együtt.
 
-**Tartalom:**
--Alapok
- -Ciklusok
- -Datum
+
+*Alapok
+ *Ciklusok
+ *Datum
 
 Készítette: Fischer Zsolt
