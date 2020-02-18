@@ -2,7 +2,7 @@
 
 Segédlet a JAVA nyelv alapjainak elsajátításához, magyarázattal együtt.
 
-Tartalom:
+**Tartalom:**
 #Alapok
 ##Ciklusok
 ##Datum
