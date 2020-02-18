@@ -13,7 +13,7 @@ Teszteléshez szükséges JAR file letöltése: https://github.com/downloads/jun
   * Változók
   * Osztályok
   * Metódusok
-  * Main metódus a javaban
+  * Main metódus java-ban
   * Láthatóságok
   * Operátorok
   * Elágazások
