@@ -25,7 +25,7 @@ public class IO
         {
             //beolvassuk az input.txt fileból az adatokat, és beleírjuk az output.txt-be
             in = new FileInputStream("input.txt");
-            out = new FileOutputStream("output.txt");
+            out = new FileOutputStream(new File("output.txt"));
 
             int c;
             while ((c = in.read()) != -1)
@@ -45,31 +45,31 @@ public class IO
             }
         }
 
-        //addig olvasunk be karaktereket a konzolról, ameddig q-t nem írunk
-        InputStreamReader cin = null;
-
-        try
-        {
-            cin = new InputStreamReader(System.in);
-            System.out.println("Írj be egy karaktert, 'q'-t, ha ki akarsz lépni.");
-            char c;
-            do
-            {
-                c = (char) cin.read();
-                System.out.print(c);
-            }
-            while (c != 'q');
-        }
-        finally
-        {
-            if (cin != null)
-            {
-                cin.close();
-            }
-        }
+//        //addig olvasunk be karaktereket a konzolról, ameddig q-t nem írunk
+//        InputStreamReader cin = null;
+//
+//        try
+//        {
+//            cin = new InputStreamReader(System.in);
+//            System.out.println("Írj be egy karaktert, 'q'-t, ha ki akarsz lépni.");
+//            char c;
+//            do
+//            {
+//                c = (char) cin.read();
+//                System.out.print(c);
+//            }
+//            while (c != 'q');
+//        }
+//        finally
+//        {
+//            if (cin != null)
+//            {
+//                cin.close();
+//            }
+//        }
 
         //mappa létrehozása
-        String dirname = "/teszt/almappa";
+        String dirname = "teszt/almappa";
         File d = new File(dirname);
 
         //mkdirst() metódus hozza létre a mappa szerekezetet

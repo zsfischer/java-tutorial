@@ -11,6 +11,7 @@ public class Datum
     {
         //Létrehoz egy új Date objectuomot, amely a létrehozás időpillanatát tartalmazza
         Date date = new Date();
+        System.out.println(date);
 
         Date date2 = new Date();
 
@@ -35,7 +36,8 @@ public class Datum
 
         //dátum formálása
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        System.out.println(sf.format(date));
+        String format = sf.format(date);
+        System.out.println(format);
 
         //String átalakítása Date objectummá
         String stringDate = "2020-01-01 12:15:23";

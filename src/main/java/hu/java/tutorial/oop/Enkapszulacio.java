@@ -1,6 +1,6 @@
 package hu.java.tutorial.oop;
 
-//Más néven elrejtés
+//Más néven elrejtés/egységbe zárás
 //OOP egyik alapja
 //Lényege, hogy az összetartozó adatokat (változók, metódusok) becsomagoljuk egyetlen önálló egységgé
 //Enkapszuláció esetén az osztály változói rejtve maradnak a többi osztály elől

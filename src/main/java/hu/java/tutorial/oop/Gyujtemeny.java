@@ -34,7 +34,7 @@ public class Gyujtemeny
 
         //rendezzük a listát természetes rendezettség alapján (növekvő)
         egeszLista.sort(Comparator.naturalOrder());
-        System.out.println(egeszLista.toString());
+        System.out.println(egeszLista);
         System.out.println("A lista mérete: " + egeszLista.size());
 
         //kivesszük a 1-es értékű elemet a listából

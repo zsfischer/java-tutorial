@@ -15,9 +15,9 @@ public class Kivetel
         //2 féle kivétel létezik:
         //Kötelezően kezelendő (Checked) - ezek olyan kivételek, amelyeket a fordító fordítási időben észlel, és emiatt kötelező lekezelnie a programozónak
         //példa:
-        //itt a new FileReader(file) FileNotFOundException-t dob, ha a keresett exception.txt file nem található
+        //itt a new FileReader(file) FileNotFoundException-t dob, ha a keresett exception.txt file nem található
         //emiatt ezt a kivételt kezelnünk kell
-        //a kivételek kezelésér a try-catch szerkezetet használjuk
+        //a kivételek kezelésére a try-catch szerkezetet használjuk
         File file = new File("exception.txt");
         try
         {
@@ -44,7 +44,7 @@ public class Kivetel
         File file2 = new File("exception.txt");
         try
         {
-            FileReader fr = new FileReader(file);
+            FileReader fr = new FileReader(file2);
         }
         catch (FileNotFoundException | NumberFormatException e)
         {
@@ -55,7 +55,7 @@ public class Kivetel
         catch (Exception e)
         {
             System.out.println(
-                    "Ide akkor fur a program, ha a keletkezett kivétel se nem FileNotFoundException, se nem NumberFormatException");
+                    "Ide akkor fut a program, ha a keletkezett kivétel se nem FileNotFoundException, se nem NumberFormatException");
         }
         finally
         {
@@ -70,6 +70,7 @@ public class Kivetel
             //amikor új kivételt dobunk, akkor vagy azonnal lekezeljük, vagy továbbdobjuk a metódus szignatúrájában a throws kulcsszóval (jelen esetben a main metódus továbbdobja SajatKivetel)
             //ha tovább dobjuk a kivételt, akkor vagy lekezeljük ott, ahol az a metódus meg van hívva, ami a kivételt továbbdobta, vagy a meghívó metódus is továbbdobja
             throw new SajatKivetel("Itt most dobunk egy saját kivételt");
+
 
             //ha nem dobnánk tovább az exception-t a main metódusban, akkor itt kéne lokálisan lekezelni
 //            try

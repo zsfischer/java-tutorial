@@ -38,7 +38,7 @@ public class Elagazasok
         }
 
         //switch
-        //ugyanaz, mint az if, csak kicsit szebb
+        //ugyanaz, mint az if, viszont több elágazás esetén szebb
         switch (a)
         {
             case 1:
@@ -57,5 +57,6 @@ public class Elagazasok
         //"b" értéke "a" értéke alapján fog eldőlni
         //ha "a" értéke 10, akkor "b" értéke 5 lesz, különben pedig 3
         int b = a == 10 ? 5 : 3;
+        //feltétel ? igaz_esetén : hamis_esetén;
     }
 }

@@ -6,7 +6,6 @@ import java.util.List;
 //Ciklusokat (loop) azért használunk, hogy pl egy listán végigmenjünk az egyes elemeken
 public class Ciklusok
 {
-
     public static void main(String[] args)
     {
         //abc nevű lista, amely String-eket tartalmaz
@@ -39,7 +38,7 @@ public class Ciklusok
         }
 
         //Java8-as megoldás
-        abc.forEach(s -> System.out.println(s));
+        abc.forEach(elem -> System.out.println(elem));
         //Method reference
         abc.forEach(System.out::println);
 
