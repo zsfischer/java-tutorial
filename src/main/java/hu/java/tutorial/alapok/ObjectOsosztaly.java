@@ -1,8 +1,5 @@
 package hu.java.tutorial.alapok;
 
-import java.util.HashMap;
-import java.util.Map;
-
 //Java az egy objektuom-orientált programozási nyelv ugye
 //Ez azt jelenti, hogy minden objectum közvetlenül/közvetve egy közös Object nevű ősosztályból származik
 //És ennek az Object osztálynak vannak metódusai, amikkel minden objectum rendelkezik, és ezeket felül tudjuk definiálni (pl.:toString(), equals(), hashCode())

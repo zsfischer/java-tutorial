@@ -1,6 +1,5 @@
 package hu.java.tutorial.alapok;
 
-import java.util.Collections;
 import java.util.Comparator;
 
 //Comparable vs Comparator
