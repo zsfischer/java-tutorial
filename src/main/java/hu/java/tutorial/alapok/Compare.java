@@ -48,11 +48,13 @@ public class Compare
     public static void main(String[] args)
     {
         Test1 test1 = new Test1("Zsolti", 10);
-        Test1 test2 = new Test1("Béla", 20);
+        Test1 test2 = new Test1("Zsolti", 10);
         Test1 test3 = new Test1("Andor", 30);
         Test1 test4 = new Test1("Zsolti", 20);
 
-        System.out.println("Zsolti Bélával összehasonlítva: " + test1.compareTo(test3));
-
+        System.out.println("test3 összehasonlítva test1-gyel: " + test3.compareTo(test1));
+        System.out.println("test1 összehasonlítva test4-gyel: " + test1.compareTo(test4));
+        System.out.println("test4 összehasonlítva test1-gyel: " + test4.compareTo(test1));
+        System.out.println("test1 összehasonlítva test2-gyel: " + test1.compareTo(test2));
     }
 }
