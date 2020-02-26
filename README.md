@@ -22,6 +22,9 @@ Teszteléshez szükséges JAR file letöltése: https://github.com/downloads/jun
   * Dátumok használata
   * I/O műveletek
   * Kivételkezelés
+  * Enumok
+  * toString, hashCode, equals
+  * Comparator, Comparable
 
 * OOP (Object-Oriented Programming)
   * Enkapszuláció (egységbe zárás)
