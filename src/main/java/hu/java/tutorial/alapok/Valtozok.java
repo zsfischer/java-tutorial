@@ -52,7 +52,7 @@ public class Valtozok
     //van default értékük
     //értéket kaphatnak deklaráláskor, konstruktorban, vagy bárhol
     //példa:
-    public class Dolgozo
+    public static class Dolgozo
     {
 
         //példány változó, ami minden másik osztályból látható
@@ -98,6 +98,5 @@ public class Valtozok
 
         // ez egy publikus, osztályszintű, konstans változó, amelyet másik osztályból úgy érünk el, hogy Ember.NEMZETISEG
         public static final String NEMZETISEG = "Magyar";
-
     }
 }

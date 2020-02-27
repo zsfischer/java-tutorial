@@ -2,7 +2,7 @@ package hu.java.tutorial.alapok;
 
 public class Osztalyok2
 {
-    String nev;
+    private String nev;
 
     public Osztalyok2()
     {
@@ -34,7 +34,7 @@ public class Osztalyok2
     public static void main(String[] args)
     {
         //Objectum létrehozása osztályból 3 lépésben
-        //1.lépsben deklatárljuk a változó névvel és típussal pl: Macska macska1, ahol a Macska a változó típusa, és a macska1 pedig a változó neve
+        //1.lépésben deklatárljuk a változó névvel és típussal pl: Macska macska1, ahol a Macska a változó típusa, és a macska1 pedig a változó neve
         //2. lépsben a new kulcsszóval hozzuk létre az új objectumot
         //3. lépésben pedig a new kulcsszót az osztály kostruktora követi -> ez fogja inicializálni az új objectumot
         //ebben az esetben a konstruktor be fogja állítani a "nev" változó értékét a paraméterként megkapott értékre

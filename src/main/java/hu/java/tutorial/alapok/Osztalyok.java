@@ -44,11 +44,12 @@ public class Osztalyok
         {
         }
 
+        //2. konstruktor
         public Macska(String szin, int i)
         {
         }
 
-        //2. konstruktor, amely paraméterül egy szöveges típusú értéket vár, majd a kapott értéket beállítja a az osztály "szin" változójának értékéül
+        //3. konstruktor, amely paraméterül egy szöveges típusú értéket vár, majd a kapott értéket beállítja a az osztály "szin" változójának értékéül
         public Macska(String szin)
         {
             this.szin = szin;

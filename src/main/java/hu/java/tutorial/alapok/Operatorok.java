@@ -15,8 +15,6 @@ public class Operatorok
         System.out.println(a * b); //szorzás
         System.out.println(a / b); //osztás
         System.out.println(a % b); //maradékos osztás, pl.: 5%2=1
-        System.out.println(++a); //"a" értékét megnöveli 1-gyel
-        System.out.println(--a); //"a" értékét csökkenti 1-gyel
 
         //Kapcsolati
         System.out.println(a == b); //egyenlő-e "a" és "b" értéke (Stringek esetén az equals() metódust használjuk)
@@ -33,6 +31,9 @@ public class Operatorok
         System.out.println(igen || nem); //vagy
 
         //Értékváltoztató
+        System.out.println(++a); //"a" értékét megnöveli 1-gyel
+        System.out.println(--a); //"a" értékét csökkenti 1-gyel
+
         int p = 10; // = értékadás
         p += 2; //hozzáad p-hez 2-t, ugyanaz mintha azt írnánk, hogy p=p+2
         p -= 2; //levon p-ből 2-t -> p=p-2

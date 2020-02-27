@@ -19,7 +19,7 @@ public class Ciklusok
             System.out.println(abc.get(i));
 
             //ha az abc lista eleme "d", akkor menjünk tovább
-            if (abc.get(i).equals("d"))
+            if (abc.get(i).equals("d")) //==, equals()
             {
                 continue;
             }
@@ -32,6 +32,11 @@ public class Ciklusok
         }
 
         //forEach ciklus
+        for (int i = 0; i < abc.size(); ++i)
+        {
+            System.out.println(abc.get(i));
+        }
+
         for (String elem : abc)
         {
             System.out.println(elem);
@@ -46,12 +51,33 @@ public class Ciklusok
         //while ciklus
         //while(feltétel) {} -> addig megy a ciklus, ameddig a feltétel igaz
         //az is lehet, hogy egyszer sem fut le, hiszen a feltétel vizsgálattal kezdődik a ciklus
+        for (int a = 0; a < 10; ++a)
+        {
+            System.out.println(a);
+        }
+
         int a = 0;
         while (a < 10)
         {
             System.out.println(a);
             a++;
         }
+
+//        int c = 0;
+//        if(c++==0){
+//            System.out.println("c 0 volt");
+//        }else{
+//            System.out.println("c nem 0 volt");
+//        }
+//        System.out.println("c értéke: " + c);
+//
+//        int k = 0;
+//        if(++k==0){
+//            System.out.println("k 0 volt");
+//        }else{
+//            System.out.println("k nem 0 volt");
+//        }
+//        System.out.println("k értéke: " + k);
 
         //do..while ciklus
         //do{
@@ -61,8 +87,8 @@ public class Ciklusok
         do
         {
             System.out.println(a);
-            a--;
+            a++;
         }
-        while (a > 0);
+        while (a < 20);
     }
 }
