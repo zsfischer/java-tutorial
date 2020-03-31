@@ -3,13 +3,14 @@ package hu.java.tutorial.oop;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 
 //Collections
@@ -38,10 +39,14 @@ public class Gyujtemeny
         System.out.println("A lista mérete: " + egeszLista.size());
 
         //kivesszük a 1-es értékű elemet a listából
-        egeszLista.remove(new Integer(1));
+        egeszLista.remove(new Integer(0));
         System.out.println(egeszLista.toString());
 
-        //kivesszük a 0., azaz 1. elemet a listából
+        //kivesszük a 0. indexű, azaz 1. elemet a listából
+//        List<String> valami = Arrays.asList("asd","asd2");
+//        valami.remove("asd");
+//        valami.remove(1);
+
         egeszLista.remove(0);
         System.out.println(egeszLista.toString());
 
@@ -84,6 +89,9 @@ public class Gyujtemeny
         set.add("három");
         set.add("egy");
 
+//        for(Iterator<String> it = set.iterator();it.hasNext();){
+//            it.next();
+//        }
         System.out.println(set.toString());
         System.out.println(set.size());
 
@@ -103,6 +111,8 @@ public class Gyujtemeny
         //ha olyan kulcs-érték párost akarunk beszúrni, ahol a kulcs már benne van a map-ben, akkor felülírjuk a már korábbi elem értékét
         map.put(1, "ez az új egy");
         System.out.println(map.toString());
+
+        map.forEach((key, value) -> System.out.println("Kulcs: " + key + ", Value: " + value));
 
         //visszaadja az 1-es kulcshoz tartozó értéket
         System.out.println(map.get(1));

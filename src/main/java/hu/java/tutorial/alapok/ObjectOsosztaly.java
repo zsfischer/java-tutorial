@@ -1,6 +1,6 @@
 package hu.java.tutorial.alapok;
 
-//Java az egy objektuom-orientált programozási nyelv ugye
+//Java az egy objektum-orientált programozási nyelv ugye
 //Ez azt jelenti, hogy minden objectum közvetlenül/közvetve egy közös Object nevű ősosztályból származik
 //És ennek az Object osztálynak vannak metódusai, amikkel minden objectum rendelkezik, és ezeket felül tudjuk definiálni (pl.:toString(), equals(), hashCode())
 public class ObjectOsosztaly

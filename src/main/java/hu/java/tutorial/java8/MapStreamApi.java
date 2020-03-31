@@ -19,8 +19,10 @@ public class MapStreamApi
         // ha van value, akkor valtoztat
         map.computeIfPresent(3, (key, val) -> val + key);
         System.out.println(map.get(3));
-
+//
         map.computeIfPresent(3, (num, val) -> null);
+//
+        System.out.println(map.get(3));
 
         // ha nincsen value, akkor valtoztat
         map.computeIfAbsent(3, num -> num + "3");

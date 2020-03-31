@@ -21,6 +21,8 @@ public class LocalTimeApi
         // The LocalTime represents time without a date.
         LocalTime now = LocalTime.now();
 
+        System.out.println(now);
+
         LocalTime sixThirty = LocalTime.parse("06:30");
 
         LocalTime sixThirty2 = LocalTime.of(6, 30);
@@ -32,6 +34,8 @@ public class LocalTimeApi
         boolean isbefore = LocalTime.parse("06:30").isBefore(LocalTime.parse("07:30"));
 
         LocalTime maxTime = LocalTime.MAX;
+
+        System.out.println(maxTime);
 
         // duration
         LocalTime initialTime = LocalTime.of(6, 30, 0);

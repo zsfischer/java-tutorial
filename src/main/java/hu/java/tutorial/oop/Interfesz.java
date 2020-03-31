@@ -21,7 +21,7 @@ package hu.java.tutorial.oop;
 public interface Interfesz
 {
     //static és final kulcsszavak elhagyhatóak, mert redundánsak
-    static final int FEJER_MEGYE_IRANYITOSZAM = 8000;
+    public static final int FEJER_MEGYE_IRANYITOSZAM = 8000;
 
     //public és abstract kulcsszavak elhagyhatóak, mert redundánsak
     public abstract void szamol();
@@ -33,6 +33,7 @@ public interface Interfesz
 
     default void szamolMeghivasa()
     {
+        hello();
         szamol();
     }
 }

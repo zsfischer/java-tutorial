@@ -37,7 +37,8 @@ public class OptionalTest
         Optional<String> bean1Name1 = bean1.map(value -> value.getName());
         bean1Name1 = bean1.map(Bean1::getName);
 
-        Optional<String> s = bean1.flatMap(value2 -> Optional.ofNullable(value2.getName()));
+        Optional<Optional<String>> s = bean1.map(value2 -> Optional.ofNullable(value2.getName()));
+        Optional<String> s1 = bean1.flatMap(value2 -> Optional.ofNullable(value2.getName()));
 
         // filter
         Optional<Bean1> filteredBean1 = bean1.filter(value -> 1L == value.getId());

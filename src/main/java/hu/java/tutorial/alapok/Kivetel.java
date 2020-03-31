@@ -3,6 +3,7 @@ package hu.java.tutorial.alapok;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 //Kivételeket (Exception) használunk arra, hogy a program futása során esetlegesen felmerülő hibákat kezeljük
@@ -30,7 +31,7 @@ public class Kivetel
             e.printStackTrace();
         }
 
-        //Nem kötelezően kezelendő (Unchecked) - ezek olyan kivételek, amelyek fordítási időben keletkeznek (Runtime Exceptions), emiatt nem tudjuk őket előre lekezelni. pl.: logikai hibák,
+        //Nem kötelezően kezelendő (Unchecked) - ezek olyan kivételek, amelyek futási időben keletkeznek (Runtime Exceptions), emiatt nem tudjuk őket előre lekezelni. pl.: logikai hibák,
         //ha ezt futtatnánk, akkor egy ArrayIndexOutOfBoundsException kapnánk, hiszen a num tömb 6. elemét szeretnénk megkapni, viszont a tömbünknek csak 5 eleme van
         //ezt a hibát viszont nem kell kötelezően lekezelni, mert ez majd csak futási időben fog kiderülni
         int[] num = {1, 2, 3, 4, 5};
@@ -71,8 +72,7 @@ public class Kivetel
             //ha tovább dobjuk a kivételt, akkor vagy lekezeljük ott, ahol az a metódus meg van hívva, ami a kivételt továbbdobta, vagy a meghívó metódus is továbbdobja
             throw new SajatKivetel("Itt most dobunk egy saját kivételt");
 
-
-            //ha nem dobnánk tovább az exception-t a main metódusban, akkor itt kéne lokálisan lekezelni
+//            ha nem dobnánk tovább az exception-t a main metódusban, akkor itt kéne lokálisan lekezelni
 //            try
 //            {
 //                throw new SajatKivetel("Itt most dobunk egy saját kivételt");
@@ -117,7 +117,8 @@ public class Kivetel
         //Azért, hogy ne kelljen ezt a lezárást nekünk saját kézzel megtennünk, erre használjuk a try-with resources szerkezetet
         //Ekkor az erőforrások automatikus lezáródnak, amikor már nem használjuk őket
         //több erőforrást használó objectum is létrehozható a try-with-resource szerkezetben. Lezáráskor ezek fordított sorrendben fognak lefutni
-        try (FileReader fr2 = new FileReader("file path"))
+        try(FileReader ff = new FileReader("file.txt");
+            FileWriter fw = new FileWriter("valami.txt"))
         {
             // ide írhatjuk a kódunkat
         }

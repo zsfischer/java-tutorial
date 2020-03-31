@@ -15,7 +15,9 @@ public class LocalDateTimeApi
         // time.
         LocalDateTime localDateTime = LocalDateTime.now();
 
-        LocalDateTime localDateTime2 = LocalDateTime.of(2015, Month.FEBRUARY, 20, 06, 30);
+        System.out.println(localDateTime);
+
+        LocalDateTime localDateTime2 = LocalDateTime.of(2015, Month.FEBRUARY, 20, 6, 30);
 
         LocalDateTime localDateTime3 = LocalDateTime.parse("2015-02-20T06:30:00");
         LocalDateTime localDateTime31 = LocalDateTime.parse("2015.02.20 16:30:00",
@@ -28,8 +30,7 @@ public class LocalDateTimeApi
         Month month = localDateTime.getMonth();
 
         // from current time in millis
-        LocalDateTime localDateTime6 = LocalDateTime
-                .ofInstant(Instant.ofEpochMilli(System.currentTimeMillis()), ZoneId.systemDefault());
+        LocalDateTime localDateTime6 = LocalDateTime.ofInstant(Instant.ofEpochMilli(System.currentTimeMillis()), ZoneId.systemDefault());
 
         LocalDateTime localDateTime7 = Instant
                 .ofEpochMilli(System.currentTimeMillis())

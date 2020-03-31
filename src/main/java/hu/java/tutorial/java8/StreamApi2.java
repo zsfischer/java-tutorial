@@ -27,7 +27,7 @@ public class StreamApi2
         /**
          * Filter1
          */
-        list.stream().filter((s) -> s.startsWith("a")).forEach(System.out::println);
+        list.stream().filter(s -> s.startsWith("a")).forEach(System.out::println);
 
         /**
          * Filter2
@@ -35,7 +35,7 @@ public class StreamApi2
         List<String> filteredList = new ArrayList<>();
         // list.stream().filter((s) -> s.endsWith("1")).forEach((s) ->
         // filteredList.add(s));
-        list.stream().filter((s) -> s.endsWith("1")).forEach(filteredList::add);
+        list.stream().filter(s -> s.endsWith("1")).forEach(filteredList::add);
         System.out.println(filteredList);
 
         filteredList.clear();

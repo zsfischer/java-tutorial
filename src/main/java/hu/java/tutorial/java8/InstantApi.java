@@ -14,6 +14,8 @@ public class InstantApi
     public static void main(String[] args)
     {
         Instant now = Instant.now();
+        System.out.println(now);
+
         Instant now2 = Instant.ofEpochMilli(System.currentTimeMillis());
         System.out.println(now);
         System.out.println(now2);

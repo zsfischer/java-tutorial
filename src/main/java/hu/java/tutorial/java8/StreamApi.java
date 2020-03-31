@@ -46,6 +46,8 @@ public class StreamApi
         // stream iterate - limit
         List<Integer> intList = Stream.iterate(0, i -> i + 3).limit(10).collect(Collectors.toList());
 
+        System.out.println(intList);
+
         // sort - local
         Stream<Item> sortedStream = list.stream().sorted((a, b) -> a.getName().compareTo(b.getName()));
         List<Item> sortedList = sortedStream.collect(Collectors.toList());

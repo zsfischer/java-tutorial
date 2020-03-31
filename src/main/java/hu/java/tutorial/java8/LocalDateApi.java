@@ -33,11 +33,13 @@ public class LocalDateApi
         boolean isAfter = LocalDate.parse("2016-06-12").isAfter(LocalDate.parse("2016-06-11"));
 
         LocalDateTime beginningOfDay = LocalDate.parse("2016-06-12").atStartOfDay();
+        System.out.println(beginningOfDay);
         LocalDate firstDayOfMonth = LocalDate.parse("2016-06-12").with(TemporalAdjusters.firstDayOfMonth());
+        System.out.println(firstDayOfMonth);
 
         // Period
         LocalDate initialDate = LocalDate.parse("2007-05-10");
-        LocalDate finalDate = initialDate.plus(Period.ofDays(5));
+        LocalDate finalDate = initialDate.plus(Period.ofYears(5));
         int five = Period.between(initialDate, finalDate).getDays();
         long weekDif = ChronoUnit.WEEKS.between(initialDate, finalDate);
         long five2 = ChronoUnit.DAYS.between(initialDate, finalDate);

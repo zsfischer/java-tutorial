@@ -18,13 +18,13 @@ public class ZonedDateTimeApi
         ZoneId zoneId = ZoneId.of("Europe/Budapest");
 
         Set<String> allZoneIds = ZoneId.getAvailableZoneIds();
-        //allZoneIds.stream().sorted().forEach(System.out::println);
+//        allZoneIds.stream().sorted().forEach(System.out::println);
 
         // AKtuális idő adott zónában
         LocalDate now = LocalDate.now(zoneId);
         LocalDateTime now2 = LocalDateTime.now(zoneId);
-        System.out.println(now);
-        System.out.println(now2);
+//        System.out.println(now);
+//        System.out.println(now2);
 
         ZonedDateTime zonedDateTime = ZonedDateTime.ofInstant(Instant.now(), zoneId);
         LocalDateTime dateTime2 = zonedDateTime.toLocalDateTime();

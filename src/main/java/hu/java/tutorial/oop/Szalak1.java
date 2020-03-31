@@ -14,7 +14,7 @@ package hu.java.tutorial.oop;
 //1. - Runnable interface implementálása
 //ekkor a Runnable interface-ben lévő run() metódust kell implementálnunk
 //mindegy, hogy milyen módon indítunk 2 vagy több szálat, de előfordulhat az az eset, hogy 2 vagy több szál egyszerre szeretne hozzáférni egy erőforráshoz
-//pl. ha több file is egyszerre szeretne beleírni egy fileba, ekkor az egyik szál épp megnyitná a filet, miközben egy másik szál pedig pont lezárná azt
+//pl. ha több szál is egyszerre szeretne beleírni egy fileba, ekkor az egyik szál épp megnyitná a filet, miközben egy másik szál pedig pont lezárná azt
 //Szóval emiatt van szükség szinkronizálásra, amely biztosítja, hogy egyszerre csak egyetlen szál tud hozzáférni az adott erőforráshoz, addig pedig a többi szál várakozik
 //erre használjuk a synchronized kulcsszót
 public class Szalak1 implements Runnable

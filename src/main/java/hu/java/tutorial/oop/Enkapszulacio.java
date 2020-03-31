@@ -1,8 +1,10 @@
 package hu.java.tutorial.oop;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+
 //Más néven elrejtés/egységbe zárás
 //OOP egyik alapja
-//Lényege, hogy az összetartozó adatokat (változók, metódusok) becsomagoljuk egyetlen önálló egységgé
+//Lényege, hogy az összetartozó adatokat (változók, metódusok) becsomagoljuk egyetlen önálló egységbe
 //Enkapszuláció esetén az osztály változói rejtve maradnak a többi osztály elől
 //ahhoz, hogy elérjük az enkapszulációt:
 //- a változóknak private-nek kell lenniük

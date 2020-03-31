@@ -16,7 +16,7 @@ public class LambdaTest
     @SuppressWarnings("unused")
     public static void main(String[] args)
     {
-        List<String> names = Arrays.asList("peter", "gabor", null, "norbert", "viktor");
+        List<String> names = Arrays.asList("peter", "gabor", "bélqa", "norbert", "viktor");
 
         Collections.sort(names, new Comparator<String>()
         {
@@ -146,10 +146,10 @@ public class LambdaTest
         /**
          * Predicate: logikai ertekkel ter vissza
          */
-        Predicate<String> predicate = (s) -> s.length() > 0;
+        Predicate<String> predicate = (string) -> string.length() > 0;
         System.out.println(predicate.test("testString1"));
 
-        Predicate<String> predicate2 = (s) -> {
+        Predicate<String> predicate2 = s -> {
             if (s == null)
             {
                 return false;
@@ -157,6 +157,8 @@ public class LambdaTest
             return s.length() > 0;
         };
         System.out.println(predicate.test("testString1"));
+
+        System.out.println(predicate2.test(null));
 
         testPredicate(s -> s.length() > 0);
 
@@ -181,16 +183,17 @@ public class LambdaTest
         /**
          * Consumer: adott muvelet vegrehajtasa, visszateresi ertek nelkul
          */
-        Consumer<String> consumer = (s) -> System.out.println("Hello world " + s + "!");
+        Consumer<String> consumer = s -> System.out.println("Hello world " + s + "!");
         consumer.accept("Java");
 
         /**
          * Comparator
          */
         Comparator<MyObject> comparator = (o1, o2) -> o1.s.compareTo(o2.s);
+        Comparator<MyObject> comparator2 = Comparator.comparing(o -> o.s);
 
-        MyObject o1 = new MyObject("Peter");
-        MyObject o2 = new MyObject("Eniko");
+        MyObject o1 = new MyObject("Eniko");
+        MyObject o2 = new MyObject("Peter");
 
         System.out.println(comparator.compare(o1, o2));
     }

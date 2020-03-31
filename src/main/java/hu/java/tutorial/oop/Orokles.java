@@ -4,8 +4,8 @@ package hu.java.tutorial.oop;
 //Öröklödést arra használunk, hogy kevesebbet kelljen kódolnunk pl, vagy átláthatóbb legyen a kód
 //pl legyen egy olyan osztályunk, hogy Állat
 //ugye minden állat rendelkezik aggyal, szívvel, fejjel stb. -> szóval ezek általános dolgok, amik minden állatra igazak
-//de vannak specikus dolgok, amelyek csak bizonyos állatokra igazak. pl.: kutyának van nyelve, a medvének van bundája, a cápának van kopoltyúja stb.
-//szóval csinálnuk egy közös ősosztályt, az Állat-ot, ebbe beleírjuk a minden állatra jellemző dolgokat
+//de vannak specifikus dolgok, amelyek csak bizonyos állatokra igazak. pl.: a medvének van bundája, a cápának van kopoltyúja stb.
+//szóval csinálunk egy közös ősosztályt, az Állat-ot, ebbe beleírjuk a minden állatra jellemző dolgokat
 //ezért később, amikor pl csinálunk egy Cápa osztályt, akkor ezeket a tulajdonságokat már nem kell leírnunk, hanem csak szimplán örököltetjük az Állat osztályból, és egyből elérjük a közös dolgokat (IS-A kapcsolat, Cápa IS-A Állat)
 //Osztályok esetén a java-ban csak egyszeri öröklés lehetséges (viszont több interfészt is implementálhat), tehát 1 osztálynak csak 1 ősosztálya lehet (interfészek esetén ez nem igaz)
 public class Orokles
@@ -34,13 +34,9 @@ public class Orokles
         private int c;
         int a;
 
-        public GyerekOsztaly(int a, int b, int c, int d)
-        {
-            //super kulcsszóval érjük el a szülő osztályban lévő metódusokat, jelen esetben a konstruktort
-            //konstruktor esetén, a super(....)-nek a legelső kifejezésnek kell lennie
-            super(a, b);
+        public GyerekOsztaly(int a, int b, int c){
+            /*new SzuloOsztaly(.....)*/super(a, b);
             this.c = c;
-            this.a = d;
         }
 
         @Override
@@ -67,15 +63,15 @@ public class Orokles
         int a = 10;
         int b = 20;
         int c = 30;
-        int d = 40;
         //statikus típus a SzuloOsztaly, dinamikus típus pedig a GyerekOsztaly
-        SzuloOsztaly osztaly = new GyerekOsztaly(a, b, c, d);
+        SzuloOsztaly osztaly = new GyerekOsztaly(a, b, c);
         osztaly.hello();
-        //a szamol() metódus nem elérhető, mert a statikus típus az a SzuloOsztaly, abban pedig nincs szamol() metódus
+//        a szamol() metódus nem elérhető, mert a statikus típus az a SzuloOsztaly, abban pedig nincs szamol() metódus
 //        osztaly.szamol();
 
-        GyerekOsztaly osztaly2 = new GyerekOsztaly(a, b, c, d);
+        GyerekOsztaly osztaly2 = new GyerekOsztaly(a, b, c);
         //mostmár van szamol() metódus, mert a statikus típus GyerekOsztaly
+        osztaly2.hello();
         osztaly2.szamol();
 
         //instanceof vs getClass

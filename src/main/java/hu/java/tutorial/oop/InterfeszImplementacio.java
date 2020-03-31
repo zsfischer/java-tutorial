@@ -14,6 +14,7 @@ public class InterfeszImplementacio implements Interfesz
         interfeszImplementacio.szamol();
         interfeszImplementacio.szamolMeghivasa();
         interfeszImplementacio.hello();
-        System.out.println(InterfeszImplementacio.FEJER_MEGYE_IRANYITOSZAM);
+        System.out.println(interfeszImplementacio.FEJER_MEGYE_IRANYITOSZAM);
+        System.out.println(Interfesz.FEJER_MEGYE_IRANYITOSZAM);
     }
 }
