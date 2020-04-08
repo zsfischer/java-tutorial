@@ -32,17 +32,19 @@ public class Orokles
     public static class GyerekOsztaly extends SzuloOsztaly
     {
         private int c;
-        int a;
+        private int a;
 
-        public GyerekOsztaly(int a, int b, int c){
-            /*new SzuloOsztaly(.....)*/super(a, b);
+        public GyerekOsztaly(int a, int b, int c)
+        {
+            super(a, b);
             this.c = c;
+            this.a = c;
         }
 
         @Override
         public void hello()
         {
-            System.out.println("Felülírt hello() metódus");
+            System.out.println("Szia a GyerekOsztályban");
         }
 
         public void helloASzuloOsztalybol()

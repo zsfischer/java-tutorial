@@ -28,7 +28,7 @@ public class Compare
         @Override
         public int compareTo(Test1 test1)
         {
-            int diff = nev.compareTo(test1.nev);
+            int diff = this.nev.compareTo(test1.nev);
             if (diff != 0)
             {
                 return diff;

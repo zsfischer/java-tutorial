@@ -8,9 +8,9 @@ import java.util.List;
 public class TestComparator implements Comparator<String>
 {
     @Override
-    public int compare(String test1, String t1)
+    public int compare(String test1, String test2)
     {
-        return test1.compareTo(t1);
+        return test1.compareTo(test2);
     }
 
     public static void main(String[] args)
@@ -23,7 +23,6 @@ public class TestComparator implements Comparator<String>
         lista.sort(new TestComparator());
         //Ezt pedig akkor tudom megtenni, hogy a lista elemeinek típusa implementálja a Comparable interfacet
         Collections.sort(lista);
-
         System.out.println(lista);
     }
 }

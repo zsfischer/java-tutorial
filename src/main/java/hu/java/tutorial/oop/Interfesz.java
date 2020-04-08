@@ -11,7 +11,6 @@ package hu.java.tutorial.oop;
 //.java kiterjesztésű
 //az interfész neve meg kell egyezzen a file nevével
 //Amiben eltér az osztályoktól:
-//nem példányosítható
 //nem tartalmaz konstruktort
 //minden metódus absztrakt
 //implements kulcsszó használatával használhatóak más osztályokban
@@ -35,5 +34,10 @@ public interface Interfesz
     {
         hello();
         szamol();
+    }
+
+    //static method-nak is lehet törzse interface-ben
+    static void staticMethod(){
+
     }
 }

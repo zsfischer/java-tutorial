@@ -14,6 +14,11 @@ public class Generikus<T>
     //primitív típusokat nem reprezentálhatnak a típus-paraméterek
     public static <E> void listaKiir(List<E> lista)
     {
+//        E e = lista.get(0);
+//        if(e instanceof String){
+//            int i = Integer.parseInt(lista.get(0));
+//        }
+
         for (E elem : lista)
         {
             System.out.println(elem);

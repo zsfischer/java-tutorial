@@ -37,7 +37,7 @@ public class Szalak1 implements Runnable
             for (int i = 0; i < 4; i++)
             {
                 System.out.println("Thread: " + szalNev + ", " + i);
-                Thread.sleep(50);
+                Thread.sleep(500);
             }
         }
         catch (InterruptedException e)
@@ -53,7 +53,7 @@ public class Szalak1 implements Runnable
         if (t == null)
         {
             t = new Thread(this, szalNev);
-            //amikor a start() mjetódus meghívódik, akkor ennek az osztálynak a run() metódusa fogja elindítani a szálat
+            //amikor a start() metódus meghívódik, akkor ennek az osztálynak a run() metódusa fogja elindítani a szálat
             t.start();
         }
     }

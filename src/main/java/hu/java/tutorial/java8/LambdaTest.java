@@ -110,7 +110,6 @@ public class LambdaTest
 
         System.out.println(functional4.test2("3"));
 
-
         /**
          * Functional constructor example
          */
@@ -206,6 +205,7 @@ public class LambdaTest
     @FunctionalInterface
     private interface MyFunctionalIFace<R, P>
     {
+
         public R test(P p1);
 
         default public String test2(String p1)
@@ -217,11 +217,13 @@ public class LambdaTest
     @FunctionalInterface
     private interface FunctionalCommonObjectIFace<R, P>
     {
+
         public R create(P p1);
     }
 
     private static class MyFuncImpl
     {
+
         public static Integer testValamis(String p1)
         {
             return Integer.valueOf(p1);
@@ -240,6 +242,7 @@ public class LambdaTest
 
     private static class MyObject
     {
+
         String s;
 
         public MyObject()
