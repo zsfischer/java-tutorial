@@ -16,6 +16,7 @@ public class GenericsTest
 
     public static void main(String[] args)
     {
+        
         String s = testMethod1("", 1);
         System.out.println(s);
 
