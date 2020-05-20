@@ -18,6 +18,7 @@ public class LocalTimeApi
     @SuppressWarnings("unused")
     public static void main(String[] args)
     {
+        
         // The LocalTime represents time without a date.
         LocalTime now = LocalTime.now();
 
