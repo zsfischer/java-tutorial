@@ -12,12 +12,14 @@ public class Polymorph
     }
 
     static class Pig extends Animal {
+        @Override
         public void animalSound() {
             System.out.println("The pig says: wee wee");
         }
     }
 
     static class Dog extends Animal {
+        @Override
         public void animalSound() {
             System.out.println("The dog says: wau wau");
         }
