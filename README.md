@@ -13,7 +13,7 @@ Teszteléshez szükséges JAR file letöltése: https://github.com/downloads/jun
   * Változók
   * Osztályok
   * Metódusok
-  * Main metódus java-ban
+  * LotteryTeszt metódus java-ban
   * Láthatóságok
   * Operátorok
   * Elágazások

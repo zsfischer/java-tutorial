@@ -1,0 +1,3 @@
+T;Gazdálkodj okosan!;10;2;6
+T;Puzzle 15 db-os;0;0;0
+K;Kanaszta;10;4;4;francia;110

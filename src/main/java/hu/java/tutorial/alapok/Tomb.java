@@ -1,7 +1,5 @@
 package hu.java.tutorial.alapok;
 
-import java.util.Arrays;
-
 //Tömböket használunk azért, hogy ha pl van 100 db egész számunk akkor ne kelljen 100 int-et deklarálni, hanem csak egy int-eket tartalmazó tömböt, amelynek aztán az elemeit be tudjuk állítani
 //a tömb egy fix méretű, azonos típusú objektumok gyűjteménye
 public class Tomb

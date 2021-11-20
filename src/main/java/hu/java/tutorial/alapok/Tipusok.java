@@ -17,5 +17,5 @@ public class Tipusok
     private char karakter; //16-biten van tárolva, pl: char letterA='A'
 
     //A String nem primitív típus, de nagyon sokszor használjuk
-    private String szoveg = "szia"; //szöveget tárolunk benne
+    private String szoveg = "A"; //szöveget tárolunk benne
 }

@@ -4,7 +4,9 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -252,6 +254,20 @@ public class LambdaTest
         public MyObject(String s)
         {
             this.s = s;
+        }
+
+        public void asd()
+        {
+            List<Integer> list = Arrays.asList(1, 2, 2, 4);
+            list.forEach(elem -> System.out.println(elem));
+            List<Integer> kettesList = list.stream().filter(elem -> elem == 2).collect(Collectors.toList());
+            Integer max = list.stream().mapToInt(elem -> elem).max().getAsInt();
+            Integer elsoKettes = list.stream().filter(elem -> elem == 2).findFirst().get();
+            Map<String, String> map = new HashMap<>();
+            map.forEach((key, value) -> {
+                System.out.println(key);
+                System.out.println(value);
+            });
         }
     }
 }

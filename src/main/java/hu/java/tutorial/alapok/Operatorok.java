@@ -33,8 +33,14 @@ public class Operatorok
         //Értékváltoztató
         System.out.println(++a); //"a" értékét megnöveli 1-gyel
         System.out.println(--a); //"a" értékét csökkenti 1-gyel
+        int l = 0;
+        System.out.println(l++);
+        System.out.println(l);
+        int o = 0;
+        System.out.println(++o);
 
         int p = 10; // = értékadás
+        p = p + 2;
         p += 2; //hozzáad p-hez 2-t, ugyanaz mintha azt írnánk, hogy p=p+2
         p -= 2; //levon p-ből 2-t -> p=p-2
         p *= 2; //p-t megszorozza 2-vel -> p=p*2

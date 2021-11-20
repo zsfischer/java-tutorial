@@ -23,7 +23,7 @@ public class Gyujtemeny
     {
         //List interface
         //azonos típusú elemek gyűjteménye
-        //indexük alapján tudjuk lekérdezni az egyes elemeket(0-tól kezdődik az indexelés)
+        //indexük alapján tudjuk lekérdezni az egyes elemeket (0-tól kezdődik az indexelés)
         //tartalmazhat duplikátumokat, azaz ugyanaz az elem többször is szerepelhet
         //a Collection interface-ben deklarált metódusokon kívül saját metódusokkal is rendelkezik
         //ArrayList, LinkedList
@@ -38,17 +38,21 @@ public class Gyujtemeny
         System.out.println(egeszLista);
         System.out.println("A lista mérete: " + egeszLista.size());
 
-        //kivesszük a 1-es értékű elemet a listából
         egeszLista.remove(new Integer(0));
-        System.out.println(egeszLista.toString());
+        System.out.println(egeszLista);
+
+        egeszLista.remove(0);
+        System.out.println(egeszLista);
+
+        //kivesszük a 1-es értékű elemet a listából
+        List<Integer> list1 = new ArrayList<>(Arrays.asList(1,0,3,4,5));
+        list1.remove(0);
+        list1.remove(new Integer(0));
 
         //kivesszük a 0. indexű, azaz 1. elemet a listából
 //        List<String> valami = Arrays.asList("asd","asd2");
 //        valami.remove("asd");
 //        valami.remove(1);
-
-        egeszLista.remove(0);
-        System.out.println(egeszLista.toString());
 
         //lista inicializálása kezdeti értékekkel egy Collection segítségével
         List<Integer> lista2 = new ArrayList<>(Arrays.asList(10, 20, 30));
@@ -69,11 +73,15 @@ public class Gyujtemeny
         Object[] intArray = lista2.toArray();
         System.out.println(Arrays.toString(intArray));
 
+        Integer[] integers1 = lista2.toArray(new Integer[0]);
+        System.out.println(Arrays.toString(integers1));
+
         //végig iterálás egy listán (de ennél vannak jobb módszerek is)
         Iterator<Integer> listaIterator = lista2.iterator();
         while (listaIterator.hasNext())
         {
-            System.out.println(listaIterator.next());
+            Integer aktualisSzam = listaIterator.next();
+            System.out.println(aktualisSzam);
         }
 
         //kitakarítja a listát
@@ -106,13 +114,17 @@ public class Gyujtemeny
         map.put(2, "ketto");
         map.put(3, "harom");
         map.put(4, "harom");
-        System.out.println(map.toString());
+        System.out.println(map);
 
         //ha olyan kulcs-érték párost akarunk beszúrni, ahol a kulcs már benne van a map-ben, akkor felülírjuk a már korábbi elem értékét
         map.put(1, "ez az új egy");
         System.out.println(map.toString());
 
         map.forEach((key, value) -> System.out.println("Kulcs: " + key + ", Value: " + value));
+
+//        map.forEach((key, value) -> {
+//            System.out.println(key + " " + value);
+//        });
 
         //visszaadja az 1-es kulcshoz tartozó értéket
         System.out.println(map.get(1));

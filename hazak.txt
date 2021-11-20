@@ -1,0 +1,2 @@
+H;Aprajafalva, Északi fasor 12.;120;2;kertes
+T;Középfölde, Keleti dűlő 4.;540;24;nem kertes

@@ -51,12 +51,12 @@ public class ObjectOsosztaly
         //a hashCode minden objectumra külön hash értékkel fog visszatérni, még akkor is, ha ezeknek a változó értékei megegyeznek
         //Erre pedig azért van szükség, mert pl ha HashMap-et használunk, akkor is jó értéket kapjunk vissza
         //Példa:
-        //Map<Team,String> leaders = new HashMap<>();
-        //leaders.put(new Team("New York", "development"), "Anne");
-        //leaders.put(new Team("Boston", "development"), "Brian");
-        //leaders.put(new Team("Boston", "marketing"), "Charlie");
+        //Map<Team,Integer> leaders = new HashMap<>();
+        //leaders.put(new Team("New York", 1), "Anne");
+        //leaders.put(new Team("Boston", 2), "Brian");
+        //leaders.put(new Team("Boston", 2), "Charlie");
         //
-        //Team myTeam = new Team("New York", "development");
+        //Team myTeam = new Team("New York", 1);
         //String myTeamLeader = leaders.get(myTeam);
         //Itt ugye azt várnánk, hogy vissza kapjuk azt, hogy Anne. De nem kapjuk (null-t fogunk kapni)
         //Ha az osztály egy pédlányát akarjuk kulcsként használni, akkor felül kell írnunk a hashCode() metódust, és ekkor ugyanaz a hashCode() fog visszajönni nekünk.

@@ -38,7 +38,7 @@ public class Szalak2 extends Thread
         if (t == null)
         {
             t = new Thread(this, szalNev);
-            //amikor a start() mjetódus meghívódik, akkor ennek az osztálynak a run() metódusa fogja elindítani a szálat
+            //amikor a start() metódus meghívódik, akkor ennek az osztálynak a run() metódusa fogja elindítani a szálat
             t.start();
         }
     }

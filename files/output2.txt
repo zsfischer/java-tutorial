@@ -1,0 +1,6 @@
+----A files/input.txt fájl tartalmának adatai----
+Szavak száma: 18
+Sorok száma: 2
+Szóközök száma: 16
+Számjegyek száma: 2
+Mai dátum: 2021-01-21

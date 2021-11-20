@@ -10,7 +10,7 @@ package hu.java.tutorial.alapok;
 //fontos, hogy a parancssori argumentumok tömbje nem tartalmazza a program nevét, és 0-tól indexelődik
 //szóval args[0]=argumentum1; args[1]=argumentum2; args[2]=argumentum3
 
-public class Main
+public class Foosztaly
 {
     public static void main(String[] args)
     {

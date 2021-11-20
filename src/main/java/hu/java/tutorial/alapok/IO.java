@@ -1,10 +1,15 @@
 package hu.java.tutorial.alapok;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 //I/O (Input/Output) műveletek végrehajtása Java-ban
 public class IO
@@ -67,6 +72,21 @@ public class IO
 //                cin.close();
 //            }
 //        }
+
+        try(BufferedReader br = new BufferedReader(new FileReader("etterem.txt")))
+        {
+            String line;
+            while((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+
+            List<String> lines = Files.readAllLines(Paths.get("etterem.txt"));
+            lines.forEach(System.out::println);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Hiba");
+        }
 
         //mappa létrehozása
         String dirname = "teszt/almappa";
