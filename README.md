@@ -37,6 +37,7 @@ Teszteléshez szükséges JAR file letöltése: https://github.com/downloads/jun
   * Szálkezelés (Thread, Runnable, Callable, Executors)
   * Annotációk, Reflection
   * Inner class, Anonymous class
+  * Polimorfizmus
   
 * Java 8-as újdonságok
   * Stream API
