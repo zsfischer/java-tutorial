@@ -25,6 +25,7 @@ Teszteléshez szükséges JAR file letöltése: https://github.com/downloads/jun
   * Enumok
   * toString, hashCode, equals
   * Comparator, Comparable
+  * Varargs
 
 * OOP (Object-Oriented Programming)
   * Enkapszuláció (egységbe zárás)
@@ -33,7 +34,9 @@ Teszteléshez szükséges JAR file letöltése: https://github.com/downloads/jun
   * Interfészek
   * Generikus osztályok/metódusok
   * Gyűjtemények
-  * Szálkezelés
+  * Szálkezelés (Thread, Runnable, Callable, Executors)
+  * Annotációk, Reflection
+  * Inner class, Anonymous class
   
 * Java 8-as újdonságok
   * Stream API
